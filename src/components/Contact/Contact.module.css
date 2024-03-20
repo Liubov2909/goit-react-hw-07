@@ -1,0 +1,31 @@
+.container {
+  height: 60px;
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 10px;
+  
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+}
+.btn {
+  border: 1px solid black;
+}
+
