@@ -1,7 +1,7 @@
 import css from "./ContactForm.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsSlice";
+import { addContact } from "../../redux/contactsOps";
 import * as Yup from "yup";
 import { useId } from "react";
 
@@ -53,8 +53,8 @@ export default function ContactForm() {
             type="tel"
             name="number"
             id={numberFieldIId}
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            placeholder="000-00-00"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="000-000-0000"
           />
           <ErrorMessage name="number" as="span" className="css.error" />
         </div>
